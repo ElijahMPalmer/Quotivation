@@ -1,13 +1,13 @@
 import React, { useState, useRef } from 'react'
+import Fade from 'react-reveal/Fade';
 
-function Home({backgroundImg, title, description}){
+function Home({backgroundImg, quote, author}){
     return(
-        <div className='wrap'>
-            <section>
-                <h1>{ title }</h1>
-                <p>{ description }</p>
-            </section>
-        
+        <div className='wrap animate' id='wrap'>
+                <section id='quote-container'>
+                    <h1>{ quote }</h1>
+                    <p id = 'author'>-{ author }</p>
+                </section>
         </div>
     );
 }

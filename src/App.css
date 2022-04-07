@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    color: #393c41;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -43,6 +43,10 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.animate {
+    transition: transform .35s ease-in-out;
 }
 
 .container {
@@ -92,9 +96,21 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-image: url(../public/images/annie-spratt-0pWdKDGal7I-unsplash.jpg)
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../public/images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg)
+}
+
+#quote-container {
+    padding: auto 0 auto 0;
+    text-align: center;
+    max-width: 55%;
+    font-size: 2em;
+}
+
+#author {
+    display: flex;
+    justify-content: flex-end;
 }
 
 #logo {
