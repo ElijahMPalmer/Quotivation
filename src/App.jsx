@@ -27,10 +27,11 @@ export default class App extends Component {
   }
 
   getQuotes() {
+    const baseURL = window.location.origin;
     switch (this.state.currentCategory) {
       case "ourChoice":
         console.log("made it to choice");
-        fetch("http://localhost:3030/quotes", { mode: "cors" })
+        fetch(`${baseURL}/quotes`, { mode: "cors" })
           .then((res) => res.json())
           .then((result) => {
             //console.log("This is the result", result);
@@ -84,6 +85,7 @@ export default class App extends Component {
       currentQuote: quote,
       currentAuthor: `${result[index].author}`,
     });
+    
     index++;
     let timer = setInterval(() => {
       this.setState({
