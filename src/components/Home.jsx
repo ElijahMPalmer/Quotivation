@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import Fade from 'react-reveal/Fade';
+
 
 function Home({backgroundImg, quote, author}){
     return(

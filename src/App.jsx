@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { Component, useEffect, useState } from "react";
-import Fade from "react-reveal/Fade";
+
 
 export default class App extends Component {
   constructor(props) {
