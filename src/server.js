@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const { Pool } = require('pg');
 require("dotenv").config();
+const PORT = process.env.PORT;
 app.use(express.json());
 
 app.use(express.static("public"));
@@ -25,6 +26,6 @@ app.get('/quotes', (req, res) => {
 
 
 
-app.listen(3030, function() {
+app.listen(PORT, function() {
     console.log('Server is running on PORT: 3030')
 })
