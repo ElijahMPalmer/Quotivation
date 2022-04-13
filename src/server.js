@@ -27,5 +27,5 @@ app.get('/quotes', (req, res) => {
 
 
 app.listen(PORT, function() {
-    console.log('Server is running on PORT: 3030')
+    console.log('Server is running on PORT: ' + PORT);
 })
