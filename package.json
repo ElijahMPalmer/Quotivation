@@ -5,9 +5,6 @@
     "engines": {
         "node": "16.13.2"
     },
-    "proxy": {
-        "/quotes": "http://localhost:8080/"
-    },
     "dependencies": {
         "@emotion/react": "^11.9.0",
         "@emotion/styled": "^11.8.1",
