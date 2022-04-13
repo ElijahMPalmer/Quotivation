@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const { Pool } = require('pg');
+require("dotenv").config();
 app.use(express.json());
 
 app.use(express.static("public"));
 
 const pool = new Pool({
-    database: 'quotivation',
+    connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false,
     },
