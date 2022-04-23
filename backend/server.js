@@ -6,7 +6,7 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("../public"));
 
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
