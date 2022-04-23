@@ -113,7 +113,7 @@ export default class App extends Component {
         }
       );
       index = (index + 1) % numQuotes;
-    }, 3000);
+    }, 120000);
   }
 
   changeCategory(category) {
