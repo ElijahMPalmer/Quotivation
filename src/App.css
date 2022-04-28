@@ -110,6 +110,7 @@
 #author {
     display: flex;
     justify-content: flex-end;
+    padding-top: 5px;
 }
 
 #logo {
@@ -121,7 +122,24 @@ a {
 }
 
 @media(max-width: 768px) {
+    #logo {
+        width: 200px;
+    }
+}
+
+@media(max-width: 600px) {
+    #logo {
+        margin: 10px 0;
+        width: 150px;
+    }
+    .container {
+        flex-direction: column;
+        padding-right: 0;
+    }
     .center-menu {
-        display: none;
+        font-size: 10px;
+    }
+    #quote-container {
+        font-size: 1.2em;
     }
 }
